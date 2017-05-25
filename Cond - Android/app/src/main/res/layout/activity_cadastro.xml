@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textLight"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="5dp"
+                    android:text="DADOS PESSOAIS"/>
+                <EditText
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/edtNome"
+                    android:background="@drawable/shape_bg_edittext"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="@color/textLight"
+                    android:textColor="@color/textDark"
+                    android:textSize="14sp"
+                    android:hint="Nome"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/imgPerfil"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/nofoto"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textLight"
+                            android:textSize="10sp"
+                            android:text="FOTO"/>
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/edtTelefone"
+                            android:background="@drawable/shape_bg_edittext"
+                            android:paddingLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:layout_height="50dp"
+                            android:imeOptions="actionDone"
+                            android:textColorHint="@color/textLight"
+                            android:textColor="@color/textDark"
+                            android:textSize="14sp"
+                            android:hint="Telefone"/>
+
+
+
+                        <Spinner
+
+                            android:background="@drawable/shape_bg_edittext"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/background"
+                            android:id="@+id/spnSexo"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"></Spinner>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textLight"
+                    android:textSize="10sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="DADOS DE ACESSO"/>
+
+                <EditText
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/edtEmail"
+                    android:background="@drawable/shape_bg_edittext"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/textLight"
+                    android:textColor="@color/textDark"
+                    android:textSize="14sp"
+                    android:imeOptions="actionDone"
+                    android:hint="Email"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:id="@+id/edtSenha"
+                        android:password="true"
+                        android:paddingLeft="10dp"
+                        android:imeOptions="actionDone"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColorHint="@color/textLight"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Senha"/>
+                    <EditText
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:id="@+id/edtSenhaConfirmacao"
+                        android:password="true"
+                        android:paddingLeft="10dp"
+                        android:imeOptions="actionDone"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColorHint="@color/textLight"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_bg_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Confirme a senha"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnCadastrar"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="CADASTRAR"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/shape_btn"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

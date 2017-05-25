@@ -1,0 +1,67 @@
+<resources>
+
+
+    <!-- the theme applied to the application or activity -->
+
+
+    <style name="CustomActionBarThemeWithoutSeparator"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="CustomActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+    </style>
+
+    <style name="TransparentTheme" parent="@style/Theme.AppCompat">
+
+        <item name="android:background">@null</item>
+        <item name="background">@null</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+        <style name="CustomDayTextAppearance"
+        parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="CustomDayTextAppearanceMedium"
+        parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#d0d0d0</item>
+    </style>
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/shape_bg_action_bar</item>
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/shape_bg_action_bar</item>
+    </style>
+
+    <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/shape_bg_action_bar</item>
+    </style>
+
+    <style name="Widget.ActionBar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="ThemeWithoutActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

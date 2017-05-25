@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/marcacomp"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_marginTop="0dp"
+            android:id="@+id/edtEmail"
+            android:text=""
+            android:background="@drawable/shape_bg_edittext"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="50dp"
+            android:textColorHint="@color/textLight"
+            android:textColor="@color/textMiddle"
+            android:textSize="14sp"
+            android:hint="Email"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bg_edittext"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#f8f9fb"
+                android:id="@+id/edtSenha"
+                android:password="true"
+android:text=""
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/textLight"
+                android:textColor="@color/textMiddle"
+                android:textSize="14sp"
+                android:hint="Senha"/>
+
+            <Button
+                android:id="@+id/btnEntrar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ENTRAR"
+                android:background="@drawable/shape_btn_second"
+                android:textSize="12sp"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OU"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:background="#ffffff"/>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CADASTRE-SE"
+        android:background="@drawable/shape_btn_principal"
+        android:textSize="12sp"/>
+</LinearLayout>

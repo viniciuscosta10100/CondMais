@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CondMais</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_reservas">Minhas Reservas</string>
+    <string name="title_activity_novo_agendamento">Nova Reserva</string>
+    <string name="title_activity_perfil">Perfil</string>
+    <string name="title_activity_mural">Mural de Avisos</string>
+    <string name="title_activity_reinvidicacoes">Reivindicações</string>
+    <string name="title_activity_nova_reivindicacao">Nova Reivindicação</string>
+    <string name="title_activity_reivindicacao">Reivindicação</string>
+    <string name="title_activity_mensagens">Mensagens</string>
+    <string name="title_activity_mensagem">Mensagem</string>
+    <string name="title_activity_main_sindico">MainSindicoActivity</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_principal_hover">#ffdb56</color>
+    <color name="color_principal">#ffc900</color>
+    <color name="color_danger">#ffff362a</color>
+    <color name="color_text">#ffffff</color>
+    <color name="background">#33343a</color>
+    <color name="background_list">#424349</color>
+    <color name="background_light">#f8f9fb</color>
+    <color name="background_alfa">#5033343a</color>
+    <color name="color_button">#3e4049</color>
+    <color name="color_button_hover">#4e505c</color>
+
+
+    <color name="textDark">#333333</color>
+    <color name="textMiddle">#777777</color>
+    <color name="textLight">#aaaaaa</color>
+    <color name="textLightMore">#eeeeee</color>
+</resources>

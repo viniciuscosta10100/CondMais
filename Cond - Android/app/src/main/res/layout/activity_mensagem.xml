@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="br.si.cond.activities.MensagemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <br.si.cond.utils.InfiniteScrollListView
+        android:layout_weight="1"
+        android:id="@+id/lvMensagens"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:minHeight="50dp"
+            android:padding="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edtMsg"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Digite uma mensagem"
+                android:textColorHint="@color/textLight"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/textDark"
+                android:background="@drawable/shape_bg_edittext"/>
+
+            <ImageButton
+                android:id="@+id/btnSend"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_send"/>
+            </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

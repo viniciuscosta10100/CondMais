@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_principal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center_vertical|left"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:text="NOVO MEMBRO"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@color/background">
+        <EditText
+            android:id="@+id/txtCpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/textLight"
+            android:textColor="@color/textDark"
+            android:hint="Digite o cpf"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:imeOptions="actionDone"
+            android:background="@drawable/shape_bg_edittext"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnCancel"
+                android:layout_marginLeft="2dp"
+                android:text="Cancelar"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:background="@color/color_button_hover"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnSalvar"
+                android:layout_marginLeft="5dp"
+                android:text="SALVAR"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/shape_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

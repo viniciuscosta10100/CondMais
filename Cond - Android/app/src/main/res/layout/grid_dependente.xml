@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+            <View
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_bg_middle_white"></View>
+            <!--<com.loopj.android.image.SmartImageView-->
+            <!--android:id="@+id/imgPerfil"-->
+            <!--android:layout_width="89dp"-->
+            <!--android:layout_height="89dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/nos"/>-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="68dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_height="68dp"
+                android:id="@+id/imgUser"
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/lblNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15sp"
+            android:text="Piscina"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
